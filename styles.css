@@ -1,65 +1,111 @@
-/* General Styles */
-* {
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1f1f;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
-/* Background */
-body {
-    background-color: #333; /* Dark gray background */
-    color: #e0e0e0; /* Light text for contrast */
-    display: flex;
-    height: 100vh;
-    margin: 0;
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
 }
 
-/* Sidebar */
+/* Sidebar styles */
 #sidebar {
     width: 250px;
-    height: 100%;
-    background-color: #444; /* Dark gray */
-    position: fixed;
+    background-color: #333;
+    color: white;
     padding: 20px;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 #sidebar ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 #sidebar ul li {
-    margin: 15px 0;
+    width: 100%;
 }
 
 #sidebar ul li a {
-    color: #bb86fc; /* Light purple */
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
     display: block;
-    padding: 12px 20px;
-    background-color: #555; /* Light gray background */
-    border-radius: 8px;
-    margin: 5px 0;
-    transition: background-color 0.3s;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    width: 100%;
 }
 
 #sidebar ul li a:hover {
-    background-color: #6200ea; /* Dark purple */
-    color: #fff;
+    background-color: #555;
+    border-color: #fff;
+    padding-left: 20px;
 }
 
-/* Content */
+/* Profile picture styles */
+.profile-pic {
+    width: 60%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Email button styles in sidebar */
+.email-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.copy-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.copy-btn i {
+    margin-left: 10px;
+}
+
+.copy-btn:hover {
+    background-color: #555;
+}
+
+/* Main content styles */
 #content {
-    margin-left: 260px;
+    margin-left: 250px;
     padding: 20px;
-    width: calc(100% - 260px);
 }
 
 .section {
@@ -68,127 +114,36 @@ body {
 
 h2 {
     font-size: 2rem;
-    color: #bb86fc; /* Light purple */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.profile-pic {
-    display: block;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 20px 0;
-}
-
-/* Projects */
-.project {
-    background-color: #555; /* Medium gray */
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
-}
-
-.project h3 {
-    color: #bb86fc; /* Light purple */
-}
-
-.btn {
-    background-color: #6200ea; /* Dark purple */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-}
-
-.btn:hover {
-    background-color: #bb86fc; /* Light purple */
-}
-
-/* Skills Progress Bars */
+/* Skill progress bar */
 .skill-bar {
-    margin-bottom: 20px;
-}
-
-.skill-bar p {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #bb86fc; /* Light purple */
+    margin-bottom: 10px;
 }
 
 .progress-bar {
-    background-color: #bb86fc; /* Light purple */
+    background-color: #555;
     height: 10px;
+    width: 0;
     border-radius: 5px;
-    width: 0; /* Set inline in HTML */
+    transition: width 0.5s;
 }
 
-/* Social Links */
-.social-links a {
-    margin: 10px;
-    color: #bb86fc; /* Light purple */
-    text-decoration: none;
-    font-weight: 600;
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.icon-link {
-    padding: 8px 16px;
-    border-radius: 8px;
-    border: 2px solid #bb86fc;
-    display: inline-block;
+.skills-list li {
+    margin: 5px 0;
 }
 
-.icon-link:hover {
-    background-color: #6200ea; /* Dark purple */
-    color: #fff;
-}
-
-/* Footer */
+/* Footer styles */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #444; /* Dark gray */
-    color: #e0e0e0; /* Light text */
-    position: static;
-    margin-top: 20px;
-}
-
-/* Copy Email Button */
-.copy-btn {
-    background-color: transparent;
-    border: 2px solid #bb86fc; /* Light purple */
-    padding: 10px 20px;
-    border-radius: 8px;
-    color: #bb86fc;
-    font-size: 1rem;
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.copy-btn i {
-    margin-left: 10px;
-    font-size: 1.2rem;
-}
-
-.copy-btn:hover {
-    background-color: #6200ea; /* Dark purple */
-    color: white;
-}
-
-.copy-btn:active {
-    background-color: #bb86fc; /* Light purple */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #sidebar {
-        width: 200px;
-    }
-
-    #content {
-        margin-left: 210px;
-    }
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 40px;
 }
