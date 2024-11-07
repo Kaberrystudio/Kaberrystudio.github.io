@@ -11,9 +11,8 @@ body {
     background-color: #333; /* Dark gray background */
     color: #e0e0e0; /* Light text for contrast */
     display: flex;
-    height: 100vh;
-    margin: 0;
-    flex-direction: column; /* Ensure content grows and footer stays at bottom */
+    flex-direction: column; /* Ensures content and footer are stacked */
+    min-height: 100vh; /* Ensures the page takes up the entire height */
 }
 
 /* Sidebar */
@@ -160,10 +159,9 @@ footer {
     padding: 10px 20px; /* Reducing padding to avoid text overflow */
     background-color: #444; /* Dark gray */
     color: #e0e0e0; /* Light text */
-    position: absolute; /* Fixed position */
-    bottom: 0; /* Aligns footer to the bottom */
     width: 100%; /* Ensures the footer spans the full width */
     box-sizing: border-box; /* Ensures padding doesn't push the text outside the box */
+    margin-top: auto; /* Pushes the footer to the bottom */
 }
 
 /* Copy Email Button */
