@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #e8f5e9; /* Verde pastel claro */
+    background-color: #c8e6c9; /* Verde pastel */
     color: #4a4a4a; /* Gris oscuro para texto */
     line-height: 1.6;
 }
@@ -21,7 +21,7 @@ body {
 header {
     text-align: center;
     padding: 2rem 0;
-    background-color: #c8e6c9; /* Verde pastel */
+    background-color: #e8f5e9; /* Verde pastel claro */
     color: #3e5f4f; /* Verde grisáceo */
     border-bottom: 4px solid #aed581; /* Verde pastel más oscuro */
 }
