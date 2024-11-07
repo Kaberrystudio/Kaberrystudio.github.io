@@ -158,7 +158,7 @@ footer {
 /* Copy Email Button */
 .copy-btn {
     background-color: transparent;
-    border: 2px solid #bb86fc; /* Light purple */
+    border: 2px solid #bb86fc; /* Same color as the links */
     padding: 10px 20px;
     border-radius: 8px;
     color: #bb86fc;
@@ -166,6 +166,8 @@ footer {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+    width: 100%;
+    max-width: 200px; /* Ensures it doesn't stretch too wide */
 }
 
 .copy-btn i {
