@@ -13,6 +13,7 @@ body {
     display: flex;
     height: 100vh;
     margin: 0;
+    flex-direction: column; /* Allow content to grow and push footer down */
 }
 
 /* Sidebar */
@@ -62,6 +63,7 @@ body {
     margin-left: 260px;
     padding: 20px;
     width: calc(100% - 260px);
+    flex-grow: 1; /* Ensures the content section expands to fill available space */
 }
 
 .section {
@@ -96,6 +98,8 @@ body {
 
 .project h3 {
     color: #bb86fc; /* Light purple */
+    font-size: 2.5rem; /* Larger font size */
+    margin-bottom: 30px; /* Added margin for space between header and content */
 }
 
 .btn {
@@ -156,8 +160,9 @@ footer {
     padding: 20px;
     background-color: #444; /* Dark gray */
     color: #e0e0e0; /* Light text */
-    position: static;
-    margin-top: 20px;
+    position: relative;
+    bottom: 0; /* Ensures footer stays at the bottom of the page */
+    margin-top: 40px;
 }
 
 /* Copy Email Button */
