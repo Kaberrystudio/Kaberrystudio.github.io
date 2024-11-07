@@ -73,7 +73,20 @@
                 <a href="https://github.com/Kaberrystudio" class="icon-link">GitHub</a>
                 <a href="mailto:kaberrystudio@gmail" class="icon-link">Email</a>
             </div>
+            <button id="copyEmailBtn" class="btn">Copy my email</button>
+            <p id="emailText">kaberrystudio@gmail.com</p>
         </section>
     </main>
+
+    <script>
+        document.getElementById('copyEmailBtn').addEventListener('click', function() {
+            const emailText = document.getElementById('emailText').textContent;
+            navigator.clipboard.writeText(emailText).then(function() {
+                alert('Email copied to clipboard!');
+            }).catch(function(error) {
+                alert('Failed to copy email: ' + error);
+            });
+        });
+    </script>
 </body>
 </html>

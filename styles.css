@@ -23,6 +23,9 @@ body {
     position: fixed;
     padding: 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #sidebar ul {
@@ -153,8 +156,28 @@ footer {
     padding: 20px;
     background-color: #444; /* Gris oscuro */
     color: #e0e0e0; /* Texto claro */
-    position: fixed;
-    bottom: 0;
-    width: 250px;
+    position: static;
     margin-top: 20px;
+}
+
+/* Botón de copiar correo */
+#copyEmailBtn {
+    background-color: #bb86fc; /* Morado claro */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#copyEmailBtn:hover {
+    background-color: #6200ea; /* Morado oscuro */
+}
+
+/* Texto de correo */
+#emailText {
+    color: #bb86fc; /* Morado claro */
+    font-weight: bold;
 }
