@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #1e1e1e; /* Gris oscuro */
-    color: #e0e0e0; /* Color claro para el texto */
+    background-color: #e8f5e9; /* Verde pastel claro */
+    color: #4a4a4a; /* Gris oscuro para texto */
     line-height: 1.6;
 }
 
@@ -21,8 +21,9 @@ body {
 header {
     text-align: center;
     padding: 2rem 0;
-    background-color: #e0f7fa;
-    color: #006064;
+    background-color: #c8e6c9; /* Verde pastel */
+    color: #3e5f4f; /* Verde grisáceo */
+    border-bottom: 4px solid #aed581; /* Verde pastel más oscuro */
 }
 
 header h1 {
@@ -32,12 +33,12 @@ header h1 {
 
 header p {
     font-size: 1.2rem;
-    color: #00796b;
+    color: #558b6e; /* Verde suave */
 }
 
 header nav a {
     margin: 0 1rem;
-    color: #00796b;
+    color: #558b6e;
     text-decoration: none;
     font-weight: 600;
 }
@@ -48,7 +49,7 @@ header nav a {
 
 h2 {
     font-size: 2rem;
-    color: #006064;
+    color: #7b8794; /* Gris pastel */
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -59,24 +60,25 @@ h2 {
     height: 150px;
     border-radius: 50%;
     margin: 1rem auto;
+    border: 3px solid #ffcccb; /* Rosa pastel */
 }
 
 .project, .skills-list, .social-links {
-    background-color: #ffffff;
+    background-color: #fff0f5; /* Rosa pastel muy claro */
     padding: 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     margin: 1rem 0;
 }
 
 .project h3, .skills-list li {
-    color: #00796b;
+    color: #ab47bc; /* Magenta pastel */
 }
 
 .btn {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #ff80ab;
+    background-color: #f48fb1; /* Rosa pastel */
     color: #ffffff;
     border-radius: 8px;
     text-decoration: none;
@@ -84,7 +86,7 @@ h2 {
 }
 
 .btn:hover {
-    background-color: #f48fb1;
+    background-color: #ffb2c4; /* Rosa pastel más claro */
 }
 
 .skills-list {
@@ -105,23 +107,23 @@ h2 {
 
 .icon-link {
     margin: 0.5rem;
-    color: #00796b;
+    color: #7e57c2; /* Magenta pastel */
     text-decoration: none;
     font-weight: 600;
-    border: 2px solid #00796b;
+    border: 2px solid #9575cd; /* Magenta pastel */
     padding: 0.3rem 0.8rem;
     border-radius: 8px;
 }
 
 .icon-link:hover {
-    background-color: #e0f7fa;
-    color: #004d40;
+    background-color: #e1bee7; /* Lila pastel */
+    color: #6a1b9a;
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #00796b;
-    color: #ffffff;
+    background-color: #c8e6c9; /* Verde pastel */
+    color: #4a4a4a;
     margin-top: 1rem;
 }
