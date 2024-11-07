@@ -13,7 +13,7 @@ body {
     display: flex;
     height: 100vh;
     margin: 0;
-    flex-direction: column; /* Allow content to grow and push footer down */
+    flex-direction: column; /* Ensure content grows and footer stays at bottom */
 }
 
 /* Sidebar */
@@ -63,7 +63,7 @@ body {
     margin-left: 260px;
     padding: 20px;
     width: calc(100% - 260px);
-    flex-grow: 1; /* Ensures the content section expands to fill available space */
+    flex-grow: 1; /* Ensures content section grows to fill available space */
 }
 
 .section {
@@ -98,8 +98,8 @@ body {
 
 .project h3 {
     color: #bb86fc; /* Light purple */
-    font-size: 2.5rem; /* Larger font size */
-    margin-bottom: 30px; /* Added margin for space between header and content */
+    font-size: 2rem; /* Reverted font size */
+    margin-bottom: 20px; /* Adjusted margin to create space between title and content */
 }
 
 .btn {
@@ -160,9 +160,10 @@ footer {
     padding: 20px;
     background-color: #444; /* Dark gray */
     color: #e0e0e0; /* Light text */
-    position: relative;
-    bottom: 0; /* Ensures footer stays at the bottom of the page */
-    margin-top: 40px;
+    position: absolute; /* Changed to absolute */
+    bottom: 0; /* Fixes the footer to the bottom */
+    width: 100%; /* Ensures the footer spans the full width */
+    margin-top: 40px; /* Margin to ensure space from content */
 }
 
 /* Copy Email Button */
