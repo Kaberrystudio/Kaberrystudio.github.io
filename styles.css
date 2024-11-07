@@ -40,6 +40,21 @@ body {
     font-weight: 600;
     font-size: 1.1rem;
     display: block;
+    padding: 12px 20px;
+    background-color: #555; /* Fondo gris claro */
+    border-radius: 8px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+#sidebar ul li a:hover {
+    background-color: #6200ea; /* Morado oscuro */
+    color: #fff;
+}
+
+/* Separadores entre enlaces */
+#sidebar ul li a:not(:last-child) {
+    border-bottom: 2px solid #444;
 }
 
 /* Contenido */
@@ -138,7 +153,8 @@ footer {
     padding: 20px;
     background-color: #444; /* Gris oscuro */
     color: #e0e0e0; /* Texto claro */
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 250px;
+    margin-top: 20px;
 }
