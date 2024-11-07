@@ -98,7 +98,7 @@ body {
 
 .project h3 {
     color: #bb86fc; /* Light purple */
-    font-size: 1.8rem; /* Reduced font size */
+    font-size: 1.4rem; /* Reducido a 1.4rem para que sea más pequeño */
     margin-bottom: 20px; /* Adjusted margin to create space between title and content */
 }
 
@@ -157,13 +157,13 @@ body {
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px 20px; /* Reducing padding to avoid text overflow */
     background-color: #444; /* Dark gray */
     color: #e0e0e0; /* Light text */
-    position: absolute; /* Changed to absolute */
-    bottom: 0; /* Fixes the footer to the bottom */
+    position: absolute; /* Fixed position */
+    bottom: 0; /* Aligns footer to the bottom */
     width: 100%; /* Ensures the footer spans the full width */
-    margin-top: 40px; /* Margin to ensure space from content */
+    box-sizing: border-box; /* Ensures padding doesn't push the text outside the box */
 }
 
 /* Copy Email Button */
