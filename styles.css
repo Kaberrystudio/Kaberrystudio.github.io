@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #f7f9fc;
-    color: #333;
+    background-color: #1e1e1e; /* Gris oscuro */
+    color: #e0e0e0; /* Color claro para el texto */
     line-height: 1.6;
 }
 
