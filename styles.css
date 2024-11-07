@@ -8,26 +8,21 @@
 
 /* Fondo */
 body {
-    background-color: #f2f2f2; /* Fondo suave y claro */
-    color: #333;
+    background-color: #333; /* Fondo gris oscuro */
+    color: #e0e0e0; /* Texto claro para contraste */
     display: flex;
     height: 100vh;
     margin: 0;
 }
 
+/* Sidebar */
 #sidebar {
     width: 250px;
     height: 100%;
-    background-color: #e1bee7; /* Lila pastel */
+    background-color: #444; /* Gris oscuro */
     position: fixed;
     padding: 20px;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#sidebar .logo img {
-    width: 100%;
-    max-width: 100px;
-    margin-bottom: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
 }
 
 #sidebar ul {
@@ -40,7 +35,7 @@ body {
 }
 
 #sidebar ul li a {
-    color: #6a1b9a; /* Magenta pastel */
+    color: #bb86fc; /* Morado claro */
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
@@ -60,7 +55,7 @@ body {
 
 h2 {
     font-size: 2rem;
-    color: #6a1b9a;
+    color: #bb86fc; /* Morado claro */
     margin-bottom: 20px;
 }
 
@@ -72,20 +67,21 @@ h2 {
     margin: 20px 0;
 }
 
+/* Proyectos */
 .project {
-    background-color: #fff;
+    background-color: #555; /* Gris intermedio */
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
 }
 
 .project h3 {
-    color: #ab47bc; /* Magenta pastel */
+    color: #bb86fc; /* Morado claro */
 }
 
 .btn {
-    background-color: #ff80ab; /* Rosa pastel */
+    background-color: #6200ea; /* Morado oscuro */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -95,9 +91,10 @@ h2 {
 }
 
 .btn:hover {
-    background-color: #f48fb1; /* Rosa pastel más claro */
+    background-color: #bb86fc; /* Morado claro */
 }
 
+/* Barra de habilidades */
 .skill-bar {
     margin-bottom: 20px;
 }
@@ -105,20 +102,20 @@ h2 {
 .skill-bar p {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #6a1b9a; /* Magenta pastel */
+    color: #bb86fc; /* Morado claro */
 }
 
 .progress-bar {
-    background-color: #ffb2c4; /* Rosa pastel muy suave */
+    background-color: #bb86fc; /* Morado claro */
     height: 10px;
     border-radius: 5px;
     width: 0; /* Se ajusta con el estilo inline en HTML */
 }
 
-/* Social links */
+/* Redes sociales */
 .social-links a {
     margin: 10px;
-    color: #ab47bc; /* Magenta pastel */
+    color: #bb86fc; /* Morado claro */
     text-decoration: none;
     font-weight: 600;
 }
@@ -126,21 +123,21 @@ h2 {
 .icon-link {
     padding: 8px 16px;
     border-radius: 8px;
-    border: 2px solid #ab47bc;
+    border: 2px solid #bb86fc;
     display: inline-block;
 }
 
 .icon-link:hover {
-    background-color: #e1bee7; /* Lila pastel */
-    color: #6a1b9a;
+    background-color: #6200ea; /* Morado oscuro */
+    color: #fff;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #c8e6c9; /* Verde pastel */
-    color: #333;
+    background-color: #444; /* Gris oscuro */
+    color: #e0e0e0; /* Texto claro */
     position: absolute;
     bottom: 0;
     width: 100%;
