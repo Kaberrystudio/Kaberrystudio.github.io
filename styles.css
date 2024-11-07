@@ -98,7 +98,7 @@ body {
 
 .project h3 {
     color: #bb86fc; /* Light purple */
-    font-size: 2rem; /* Reverted font size */
+    font-size: 1.8rem; /* Reduced font size */
     margin-bottom: 20px; /* Adjusted margin to create space between title and content */
 }
 
