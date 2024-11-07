@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio de IT</title>
+    <title>My IT Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Sidebar lateral con menú desplegable -->
+    <!-- Sidebar with dropdown menu -->
     <nav id="sidebar">
         <ul>
             <li><a href="#about">About me</a></li>
@@ -19,29 +19,35 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <footer>
-            <p>&copy; 2024 Kaberrystudio. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Kaberrystudio. All rights reserved.</p>
         </footer>
     </nav>
 
-    <!-- Contenido principal -->
+    <!-- Main content -->
     <main id="content">
         <section id="about" class="section">
             <h2>About me</h2>
-            <p>Hola, soy un desarrollador con experiencia en tecnologías web y me apasiona crear soluciones innovadoras.</p>
-            <img src="images/Kaberrylogo.png" alt="Mi foto" class="profile-pic">
+            <p>Hello, I'm a developer with experience in web technologies and I'm passionate about creating innovative solutions.</p>
+            <div class="email-container">
+                <button id="copyEmailBtn" class="copy-btn">
+                    <span id="emailText">kaberrystudio@gmail.com</span>
+                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                </button>
+            </div>
+            <img src="images/Kaberrylogo.png" alt="My photo" class="profile-pic">
         </section>
 
         <section id="projects" class="section">
             <h2>Projects</h2>
             <div class="project">
-                <h3>Proyecto 1</h3>
-                <p>Descripción breve del proyecto, tecnologías utilizadas y objetivos.</p>
-                <a href="https://github.com/tuusuario/proyecto1" class="btn">Ver en GitHub</a>
+                <h3>Project 1</h3>
+                <p>A brief description of the project, technologies used, and goals.</p>
+                <a href="https://github.com/yourusername/project1" class="btn">View on GitHub</a>
             </div>
             <div class="project">
-                <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto, tecnologías utilizadas y objetivos.</p>
-                <a href="https://github.com/tuusuario/proyecto2" class="btn">Ver en GitHub</a>
+                <h3>Project 2</h3>
+                <p>A brief description of the project, technologies used, and goals.</p>
+                <a href="https://github.com/yourusername/project2" class="btn">View on GitHub</a>
             </div>
         </section>
 
@@ -67,14 +73,12 @@
 
         <section id="contact" class="section">
             <h2>Contact</h2>
-            <p>Puedes encontrarme en las siguientes redes:</p>
+            <p>You can find me on the following platforms:</p>
             <div class="social-links">
-                <a href="https://linkedin.com/in/tuusuario" class="icon-link">LinkedIn</a>
+                <a href="https://linkedin.com/in/yourusername" class="icon-link">LinkedIn</a>
                 <a href="https://github.com/Kaberrystudio" class="icon-link">GitHub</a>
                 <a href="mailto:kaberrystudio@gmail" class="icon-link">Email</a>
             </div>
-            <button id="copyEmailBtn" class="btn">Copy my email</button>
-            <p id="emailText">kaberrystudio@gmail.com</p>
         </section>
     </main>
 

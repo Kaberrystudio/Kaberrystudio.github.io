@@ -1,4 +1,4 @@
-/* Estilo general */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Fondo */
+/* Background */
 body {
-    background-color: #333; /* Fondo gris oscuro */
-    color: #e0e0e0; /* Texto claro para contraste */
+    background-color: #333; /* Dark gray background */
+    color: #e0e0e0; /* Light text for contrast */
     display: flex;
     height: 100vh;
     margin: 0;
@@ -19,7 +19,7 @@ body {
 #sidebar {
     width: 250px;
     height: 100%;
-    background-color: #444; /* Gris oscuro */
+    background-color: #444; /* Dark gray */
     position: fixed;
     padding: 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
@@ -38,29 +38,24 @@ body {
 }
 
 #sidebar ul li a {
-    color: #bb86fc; /* Morado claro */
+    color: #bb86fc; /* Light purple */
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
     display: block;
     padding: 12px 20px;
-    background-color: #555; /* Fondo gris claro */
+    background-color: #555; /* Light gray background */
     border-radius: 8px;
     margin: 5px 0;
     transition: background-color 0.3s;
 }
 
 #sidebar ul li a:hover {
-    background-color: #6200ea; /* Morado oscuro */
+    background-color: #6200ea; /* Dark purple */
     color: #fff;
 }
 
-/* Separadores entre enlaces */
-#sidebar ul li a:not(:last-child) {
-    border-bottom: 2px solid #444;
-}
-
-/* Contenido */
+/* Content */
 #content {
     margin-left: 260px;
     padding: 20px;
@@ -73,7 +68,7 @@ body {
 
 h2 {
     font-size: 2rem;
-    color: #bb86fc; /* Morado claro */
+    color: #bb86fc; /* Light purple */
     margin-bottom: 20px;
 }
 
@@ -85,9 +80,9 @@ h2 {
     margin: 20px 0;
 }
 
-/* Proyectos */
+/* Projects */
 .project {
-    background-color: #555; /* Gris intermedio */
+    background-color: #555; /* Medium gray */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -95,11 +90,11 @@ h2 {
 }
 
 .project h3 {
-    color: #bb86fc; /* Morado claro */
+    color: #bb86fc; /* Light purple */
 }
 
 .btn {
-    background-color: #6200ea; /* Morado oscuro */
+    background-color: #6200ea; /* Dark purple */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -109,10 +104,10 @@ h2 {
 }
 
 .btn:hover {
-    background-color: #bb86fc; /* Morado claro */
+    background-color: #bb86fc; /* Light purple */
 }
 
-/* Barra de habilidades */
+/* Skills Progress Bars */
 .skill-bar {
     margin-bottom: 20px;
 }
@@ -120,20 +115,20 @@ h2 {
 .skill-bar p {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #bb86fc; /* Morado claro */
+    color: #bb86fc; /* Light purple */
 }
 
 .progress-bar {
-    background-color: #bb86fc; /* Morado claro */
+    background-color: #bb86fc; /* Light purple */
     height: 10px;
     border-radius: 5px;
-    width: 0; /* Se ajusta con el estilo inline en HTML */
+    width: 0; /* Set inline in HTML */
 }
 
-/* Redes sociales */
+/* Social Links */
 .social-links a {
     margin: 10px;
-    color: #bb86fc; /* Morado claro */
+    color: #bb86fc; /* Light purple */
     text-decoration: none;
     font-weight: 600;
 }
@@ -146,7 +141,7 @@ h2 {
 }
 
 .icon-link:hover {
-    background-color: #6200ea; /* Morado oscuro */
+    background-color: #6200ea; /* Dark purple */
     color: #fff;
 }
 
@@ -154,30 +149,46 @@ h2 {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #444; /* Gris oscuro */
-    color: #e0e0e0; /* Texto claro */
+    background-color: #444; /* Dark gray */
+    color: #e0e0e0; /* Light text */
     position: static;
     margin-top: 20px;
 }
 
-/* Botón de copiar correo */
-#copyEmailBtn {
-    background-color: #bb86fc; /* Morado claro */
-    border: none;
+/* Copy Email Button */
+.copy-btn {
+    background-color: transparent;
+    border: 2px solid #bb86fc; /* Light purple */
     padding: 10px 20px;
     border-radius: 8px;
-    color: white;
+    color: #bb86fc;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
     cursor: pointer;
-    margin-bottom: 10px;
-    display: inline-block;
 }
 
-#copyEmailBtn:hover {
-    background-color: #6200ea; /* Morado oscuro */
+.copy-btn i {
+    margin-left: 10px;
+    font-size: 1.2rem;
 }
 
-/* Texto de correo */
-#emailText {
-    color: #bb86fc; /* Morado claro */
-    font-weight: bold;
+.copy-btn:hover {
+    background-color: #6200ea; /* Dark purple */
+    color: white;
+}
+
+.copy-btn:active {
+    background-color: #bb86fc; /* Light purple */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 200px;
+    }
+
+    #content {
+        margin-left: 210px;
+    }
 }
