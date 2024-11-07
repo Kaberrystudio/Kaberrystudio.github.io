@@ -10,29 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Kaberrystudio</h1>
-            <p>AWS Devops | Public Cloud | Automation</p>
-            <nav>
-                <a href="#about">About me</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </nav>
+    <!-- Sidebar lateral con menú desplegable -->
+    <nav id="sidebar">
+        <div class="logo">
+            <img src="images/Kaberrylogo.png" alt="Logo Kaberrystudio">
         </div>
-    </header>
-    
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About me</h2>
-            <p>Hola, soy un desarrollador con experiencia en tecnologías web y me apasiona crear soluciones innovadoras. Aquí encontrarás algunos de mis proyectos y habilidades.</p>
-            <img src="images/Kaberrylogo.png" alt="Mi foto" class="profile-pic">
-        </div>
-    </section>
+        <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section id="projects" class="section">
-        <div class="container">
+    <!-- Contenido principal -->
+    <main id="content">
+        <section id="about" class="section">
+            <h2>About me</h2>
+            <p>Hola, soy un desarrollador con experiencia en tecnologías web y me apasiona crear soluciones innovadoras.</p>
+            <img src="images/Kaberrylogo.png" alt="Mi foto" class="profile-pic">
+        </section>
+
+        <section id="projects" class="section">
             <h2>Projects</h2>
             <div class="project">
                 <h3>Proyecto 1</h3>
@@ -44,36 +43,41 @@
                 <p>Descripción breve del proyecto, tecnologías utilizadas y objetivos.</p>
                 <a href="https://github.com/tuusuario/proyecto2" class="btn">Ver en GitHub</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="skills" class="section">
-        <div class="container">
+        <section id="skills" class="section">
             <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Python</li>
-                <li>Flask</li>
-                <li>Boto3</li>
-                <li>SQL</li>
-                <li>AWS</li>
-            </ul>
-        </div>
-    </section>
+            <div class="skill-bar">
+                <p>Python</p>
+                <div class="progress-bar" style="width: 80%"></div>
+            </div>
+            <div class="skill-bar">
+                <p>Flask</p>
+                <div class="progress-bar" style="width: 70%"></div>
+            </div>
+            <div class="skill-bar">
+                <p>Boto3</p>
+                <div class="progress-bar" style="width: 75%"></div>
+            </div>
+            <div class="skill-bar">
+                <p>AWS</p>
+                <div class="progress-bar" style="width: 90%"></div>
+            </div>
+        </section>
 
-    <section id="contact" class="section">
-        <div class="container">
+        <section id="contact" class="section">
             <h2>Contact</h2>
-            <p>Social links:</p>
+            <p>Puedes encontrarme en las siguientes redes:</p>
             <div class="social-links">
                 <a href="https://linkedin.com/in/tuusuario" class="icon-link">LinkedIn</a>
                 <a href="https://github.com/Kaberrystudio" class="icon-link">GitHub</a>
                 <a href="mailto:kaberrystudio@gmail" class="icon-link">Email</a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Kaberrystudio. All rights reserved.</p>
+        <p>&copy; 2024 Kaberrystudio. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
