@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #c8e6c9; /* Verde pastel */
-    color: #4a4a4a; /* Gris oscuro para texto */
+    background-color: #f0e6f6; /* Lila pastel */
+    color: #333333; /* Gris oscuro para texto */
     line-height: 1.6;
 }
 
@@ -21,9 +21,9 @@ body {
 header {
     text-align: center;
     padding: 2rem 0;
-    background-color: #e8f5e9; /* Verde pastel claro */
-    color: #3e5f4f; /* Verde grisáceo */
-    border-bottom: 4px solid #aed581; /* Verde pastel más oscuro */
+    background-color: #b39ddb; /* Lavanda pastel */
+    color: #4a148c; /* Morado oscuro */
+    border-bottom: 4px solid #9575cd; /* Lavanda oscuro */
 }
 
 header h1 {
@@ -33,14 +33,18 @@ header h1 {
 
 header p {
     font-size: 1.2rem;
-    color: #558b6e; /* Verde suave */
+    color: #6a1b9a; /* Morado medio */
 }
 
 header nav a {
     margin: 0 1rem;
-    color: #558b6e;
+    color: #4a148c;
     text-decoration: none;
     font-weight: 600;
+}
+
+header nav a:hover {
+    color: #311b92;
 }
 
 .section {
@@ -49,7 +53,7 @@ header nav a {
 
 h2 {
     font-size: 2rem;
-    color: #7b8794; /* Gris pastel */
+    color: #512da8; /* Morado más oscuro */
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -60,33 +64,34 @@ h2 {
     height: 150px;
     border-radius: 50%;
     margin: 1rem auto;
-    border: 3px solid #ffcccb; /* Rosa pastel */
+    border: 4px solid #f8bbd0; /* Rosa pastel */
 }
 
 .project, .skills-list, .social-links {
-    background-color: #fff0f5; /* Rosa pastel muy claro */
+    background-color: #e8eaf6; /* Azul pastel claro */
     padding: 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: 1rem 0;
 }
 
 .project h3, .skills-list li {
-    color: #ab47bc; /* Magenta pastel */
+    color: #512da8; /* Morado oscuro */
 }
 
 .btn {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #f48fb1; /* Rosa pastel */
+    padding: 0.6rem 1.2rem;
+    background-color: #ce93d8; /* Rosa pastel fuerte */
     color: #ffffff;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #ffb2c4; /* Rosa pastel más claro */
+    background-color: #f48fb1; /* Rosa pastel claro */
 }
 
 .skills-list {
@@ -98,7 +103,11 @@ h2 {
 
 .skills-list li {
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: #5e35b1; /* Morado */
+    background-color: #f3e5f5;
+    margin: 0.2rem;
+    border-radius: 8px;
 }
 
 .social-links {
@@ -107,23 +116,24 @@ h2 {
 
 .icon-link {
     margin: 0.5rem;
-    color: #7e57c2; /* Magenta pastel */
+    color: #512da8; /* Morado pastel */
     text-decoration: none;
     font-weight: 600;
-    border: 2px solid #9575cd; /* Magenta pastel */
-    padding: 0.3rem 0.8rem;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
+    background-color: #d1c4e9;
+    transition: background-color 0.3s ease;
 }
 
 .icon-link:hover {
-    background-color: #e1bee7; /* Lila pastel */
-    color: #6a1b9a;
+    background-color: #b39ddb;
+    color: #311b92;
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #c8e6c9; /* Verde pastel */
-    color: #4a4a4a;
+    background-color: #b39ddb; /* Morado claro */
+    color: #311b92;
     margin-top: 1rem;
 }
