@@ -8,24 +8,31 @@
 
 /* Background */
 body {
-    background-color: #333; /* Dark gray background */
+    background-color: #222; /* Darker background */
     color: #e0e0e0; /* Light text for contrast */
     display: flex;
-    flex-direction: column; /* Ensures content and footer are stacked */
-    min-height: 100vh; /* Ensures the page takes up the entire height */
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Sidebar */
 #sidebar {
     width: 250px;
     height: 100%;
-    background-color: #444; /* Dark gray */
+    background-color: #333; /* Dark gray */
     position: fixed;
     padding: 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align links towards the top */
+    justify-content: space-between;
+}
+
+#sidebar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
 #sidebar ul {
@@ -34,22 +41,19 @@ body {
 }
 
 #sidebar ul li {
-    margin: 10px 0; /* Reduced margin to add separation */
+    margin: 10px 0;
 }
 
 #sidebar ul li a {
     color: #bb86fc; /* Light purple */
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
     display: block;
-    padding: 15px 20px; /* Increased padding for higher links */
-    background-color: #555; /* Light gray background */
+    padding: 10px 20px;
+    background-color: #444;
     border-radius: 8px;
-    margin: 5px 0; /* Margin between links */
     transition: background-color 0.3s;
-    height: 60px; /* Increased height for the links */
-    line-height: 30px; /* Vertically centers text */
 }
 
 #sidebar ul li a:hover {
@@ -62,112 +66,29 @@ body {
     margin-left: 260px;
     padding: 20px;
     width: calc(100% - 260px);
-    flex-grow: 1; /* Ensures content section grows to fill available space */
+    flex-grow: 1;
 }
 
 .section {
     margin-bottom: 40px;
 }
 
-/* About me Heading */
-#about h2 {
+.section h2 {
     font-size: 2rem;
     color: #bb86fc; /* Light purple */
     margin-bottom: 20px;
-    white-space: nowrap; /* Ensures the text stays in one line */
-}
-
-/* Profile Picture */
-.profile-pic {
-    display: block;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 20px 0;
-}
-
-/* Projects */
-.project {
-    background-color: #555; /* Medium gray */
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
-}
-
-.project h3 {
-    color: #bb86fc; /* Light purple */
-    font-size: 1.4rem; /* Reducido a 1.4rem para que sea más pequeño */
-    margin-bottom: 20px; /* Adjusted margin to create space between title and content */
-}
-
-.btn {
-    background-color: #6200ea; /* Dark purple */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-}
-
-.btn:hover {
-    background-color: #bb86fc; /* Light purple */
-}
-
-/* Skills Progress Bars */
-.skill-bar {
-    margin-bottom: 20px;
-}
-
-.skill-bar p {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #bb86fc; /* Light purple */
-}
-
-.progress-bar {
-    background-color: #bb86fc; /* Light purple */
-    height: 10px;
-    border-radius: 5px;
-    width: 0; /* Set inline in HTML */
-}
-
-/* Social Links */
-.social-links a {
-    margin: 10px;
-    color: #bb86fc; /* Light purple */
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.icon-link {
-    padding: 8px 16px;
-    border-radius: 8px;
-    border: 2px solid #bb86fc;
-    display: inline-block;
-}
-
-.icon-link:hover {
-    background-color: #6200ea; /* Dark purple */
-    color: #fff;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px 20px; /* Reducing padding to avoid text overflow */
-    background-color: #444; /* Dark gray */
-    color: #e0e0e0; /* Light text */
-    width: 100%; /* Ensures the footer spans the full width */
-    box-sizing: border-box; /* Ensures padding doesn't push the text outside the box */
-    margin-top: auto; /* Pushes the footer to the bottom */
 }
 
 /* Copy Email Button */
+.email-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
 .copy-btn {
     background-color: transparent;
-    border: 2px solid #bb86fc; /* Same color as the links */
+    border: 2px solid #bb86fc;
     padding: 10px 20px;
     border-radius: 8px;
     color: #bb86fc;
@@ -175,8 +96,7 @@ footer {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-    width: 100%;
-    max-width: 200px; /* Ensures it doesn't stretch too wide */
+    transition: all 0.3s ease;
 }
 
 .copy-btn i {
@@ -185,12 +105,94 @@ footer {
 }
 
 .copy-btn:hover {
-    background-color: #6200ea; /* Dark purple */
+    background-color: #6200ea;
     color: white;
 }
 
-.copy-btn:active {
-    background-color: #bb86fc; /* Light purple */
+/* Projects */
+.project {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #bb86fc;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #bb86fc;
+}
+
+/* Skills Progress Bars */
+.skill-bar {
+    margin-bottom: 20px;
+}
+
+.skill-bar p {
+    color: #bb86fc;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #bb86fc;
+    height: 10px;
+    border-radius: 5px;
+    width: 0; /* Set inline in HTML */
+}
+
+/* Social Links */
+.social-links a {
+    margin: 10px;
+    color: #bb86fc;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-links i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.icon-link {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 2px solid #bb86fc;
+    transition: all 0.3s ease;
+}
+
+.icon-link:hover {
+    background-color: #6200ea;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #e0e0e0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
 }
 
 /* Responsive Design */
@@ -201,5 +203,9 @@ footer {
 
     #content {
         margin-left: 210px;
+    }
+
+    .email-container {
+        justify-content: center;
     }
 }
