@@ -8,12 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Sidebar with dropdown menu -->
     <nav id="sidebar">
-        <img src="images/Kaberrylogo.png" alt="Kaberry Logo" class="profile-pic">
+        <img src="images/Kaberrylogo.png" alt="My photo" class="profile-pic" style="width: 50%; height: auto; margin-top: 20px; margin-left: 25%; border-radius: 50%; object-fit: cover;">
         <ul>
             <li><a href="#about">About me</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -24,20 +23,24 @@
             <p>&copy; 2024 Kaberrystudio. All rights reserved.</p>
         </footer>
     </nav>
+
     <!-- Main content -->
     <main id="content">
         <section id="about" class="section">
-            <h2>About me</h2>
-            <div class="email-container">
-                <button id="copyEmailBtn" class="copy-btn">
-                    <span id="emailText">kaberrystudio@gmail.com</span>
-                    <i class="fa fa-clipboard" aria-hidden="true"></i>
-                </button>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h2>About me</h2>
+                <!-- Button to copy email (aligned to the right) -->
+                <div class="email-container" style="width: 100%; display: flex; justify-content: flex-end;">
+                    <button id="copyEmailBtn" class="copy-btn" style="width: 100%; padding: 8px; font-size: 14px; background-color: transparent; border: 2px solid #bb86fc; color: #bb86fc; display: flex; justify-content: space-between; align-items: center; border-radius: 8px;">
+                        <span id="emailText" style="width: 85%;">kaberrystudio@gmail.com</span>
+                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                    </button>
+                </div>
             </div>
             <p>
                 Hello, I'm a professional with over 18 years of experience in the IT sector. I currently specialize as an AWS DevOps Engineer, and I have a deep understanding of cloud infrastructure and deployment pipelines. Over the years, I've gained extensive experience in a wide range of IT disciplines, including:
             </p>
-            <ul>
+            <ul style="margin-left: 40px;">
                 <li>Linux system administration</li>
                 <li>Storage systems and backups</li>
                 <li>Database management and performance optimization</li>
@@ -48,6 +51,7 @@
                 I'm passionate about improving systems, automating processes, and ensuring optimal performance in everything I do. I enjoy solving complex problems and helping organizations leverage technology to drive success.
             </p>
         </section>
+
         <section id="projects" class="section">
             <h2>Projects</h2>
             <div class="project">
@@ -61,6 +65,7 @@
                 <a href="https://github.com/yourusername/project2" class="btn">View on GitHub</a>
             </div>
         </section>
+
         <section id="skills" class="section">
             <h2>Skills</h2>
             <div class="skill-bar">
@@ -96,16 +101,18 @@
                 <div class="progress-bar" style="width: 80%"></div>
             </div>
         </section>
+
         <section id="contact" class="section">
             <h2>Contact</h2>
             <p>You can find me on the following platforms:</p>
             <div class="social-links">
-                <a href="https://linkedin.com/in/yourusername" class="icon-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/Kaberrystudio" class="icon-link"><i class="fab fa-github"></i> GitHub</a>
-                <a href="mailto:kaberrystudio@gmail.com" class="icon-link"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://linkedin.com/in/yourusername" class="icon-link">LinkedIn</a>
+                <a href="https://github.com/Kaberrystudio" class="icon-link">GitHub</a>
+                <a href="mailto:kaberrystudio@gmail" class="icon-link">Email</a>
             </div>
         </section>
     </main>
+
     <script>
         document.getElementById('copyEmailBtn').addEventListener('click', function() {
             const emailText = document.getElementById('emailText').textContent;
